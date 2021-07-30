@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+    <a href="#home" class="w3-button w3-bar-item">Home</a>
+    <a href="#band" class="w3-button w3-bar-item">Band</a>
+    <a href="#tour" class="w3-button w3-bar-item">Tour</a>
+    <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+  </nav>
+
+<!-- Slide Show -->
+<section>
+    <img class="mySlides" src="me.jpg"
+    style="width:100%">
+    <img class="mySlides" src="me + george the dog (rip).PNG"
+    style="width:100%">
+    <img class="mySlides" src="book.jpg"
+    style="width:100%">
+  </section>
+  
+  <!-- Band Description -->
+  <section class="w3-container w3-center w3-content" style="max-width:600px">
+    <h2 class="w3-wide">Leane Ying</h2>
+    <p class="w3-opacity"><i>a few pictures</i></p>
+    <p class="w3-justify">this is a test website with the only pictures i had on this computer.</p>
+  </section>
+  
+  <!-- Band Members -->
+  <section class="w3-row-padding w3-center w3-light-grey">
+    <article class="w3-third">
+      <p><lol></p>
+      <img src="book.jpg" alt="Random Name" style="width:100%">
+      <p>this is my goodreads pfp.</p>
+    </article>
+    <article class="w3-third">
+      <p>lol</p>
+      <img src="me.jpg" alt="Random Name" style="width:100%">
+      <p>this is a picture of me.</p>
+    </article>
+    <article class="w3-third">
+      <p>lol</p>
+      <img src="book.jpg" alt="Random Name" style="width:100%">
+      <p>my pfp again.</p>
+    </article>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+    <a href="#"><i class="fa fa-facebook-official"></i></a>
+    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-flickr"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <p class="w3-medium">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+    </p>
+  </footer>
+  
+  <script>
+  // Automatic Slideshow - change image every 3 seconds
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+  }
+  </script>
+  
+  </body>
+  </html>
+  
